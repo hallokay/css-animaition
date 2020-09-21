@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wave</title>
+
+    <style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: 
+    linear-gradient(to right, #ff758c 0%, #ff72b3 100%);
+}
+.circle {
+    width: 10px; height: 10px;
+    background: #fff;
+    margin: 5px 10px;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    transform-origin: top center ;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0) scale(1.1);
+    }
+    50%{
+        transform: rotate(180deg) scale(0.5);
+    }
+    100% {
+        transform: rotate(360deg) scale(1.1);
+    }
+}
+
+.row {
+    display: flex;
+    /* flex-direction: column; */
+}
+.row1 .circle{
+    animation-delay: 100ms;
+
+}
+.row2 .circle{
+    animation-delay: 200ms;
+    
+}
+.row3 .circle{
+    animation-delay: 400ms;
+    
+}
+.row4 .circle{
+    animation-delay: 600ms;
+    
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="circles">
+        <div class="row row1">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="row row2">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="row row3">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="row row4">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+</body>
+</html>
